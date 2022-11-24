@@ -1,0 +1,9 @@
+.nav-link{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21px;
+  font-weight: 800;
+
+}
+.nav-item:hover{
+  background-color: lightgreen;
+}

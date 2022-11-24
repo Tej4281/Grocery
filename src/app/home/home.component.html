@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="Home">
+      <div class="row pt-5">
+        <div class="col-md ">
+
+        </div>
+        <div class="col-md pt-5">
+          <!-- <div class="card"> -->
+          <!-- <div class="card-body"> -->
+          <h1 class="text">Fresh And Organic</h1>
+          <h4 class="txt">Your Daily Need Products</h4>
+          <button class="btn btn-success test">Get Started</button>
+          <!-- </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md pt-3">
+          <div class="card bg-dark text-dark bg-image hover-zoom">
+            <img src="/assets/img/banner-1.jpg" class="card-img" alt="Stony
+              Beach" width="100%"/>
+            <div class="card-img-overlay">
+              <h1 class="text">Special Offer</h1>
+              <h4 class="txt">Upto 45% Off</h4>
+              <button class="btn btn-success ">Check Out</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md pt-3">
+          <div class="card bg-dark text-dark bg-image hover-zoom">
+            <img src="/assets/img/banner-2.jpg" class="card-img" alt="Stony
+              Beach" width="100%"/>
+            <div class="card-img-overlay">
+              <h1 class="text">Special Offer</h1>
+              <h4 class="txt">Upto 45% Off</h4>
+              <button class="btn btn-success ">Check Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5" id="Category">
+      <h1 class="text-center pb-3"><span><b>SHOP BY</b> </span><span
+          class="text-success"><b>CATEGORY</b></span></h1>
+      <div class="row g-0">
+        <div class="col ms-4" *ngFor="let data of data">
+          <div class="card border border-dark shadow-0 mb-3" style="max-width:
+            18rem;">
+            <div class="card-body text-success text-center">
+              <h5 class="card-title text-dark"><b>{{data.txt}}</b></h5>
+              <p class="card-text text-dark"><b>{{data.name}}</b></p>
+
+              <div class="container-fluid pb-3">
+                <a class="btn btn-success test">Add To Cart</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 " id="Product">
+      <h1 class="text-center pb-3"><span><b>LATEST</b> </span><span
+          class="text-success"><b>PRODUCTS</b></span></h1>
+
+      <div class="row g-0">
+        <div class="col-md-4" *ngFor="let info of info">
+          <div class="card border border-dark shadow-0 mb-3 ms-5"
+            style="max-width: 18rem;">
+            <div class="card-header text-dark"><span class="span">{{info.txt}}</span></div>
+            <div class="card-body text-dark text-center">
+              <div class="center">
+                <img src="{{info.img}}" alt="" class="rounded" height="100px" width="120px">
+              </div>
+              <h5 class="card-title text-dark ">{{info.name}}</h5>
+              <p class="card-text text-dark ">{{info.price | currency :'INR'}}</p>
+              <div class="quantity text-dark">
+                <span>Quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+              </div>
+            </div>
+            <div class="container-fluid pb-3">
+              <a class="btn btn-success test">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-5">
+      <div class="deal" id="Deal">
+        <h1 class="card-title text-success ms-5 content"><b>Deal Of The Day</b></h1>
+        <a href="" class="btn btn-success ms-5">Check The Deal</a>
+      </div>
+    </section>
+
+    <h1 class="text-center pb-3 mt-5"><span><b>LATEST</b> </span><span
+        class="text-success"><b>PRODUCTS</b></span></h1>
+
+    <div class="container" style="border: 1px solid black;" id="Contact">
+      <section class="mt-5">
+        <form>
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" class="form-control border
+              border-dark" />
+            <label class="form-label" for="form4Example1">Name</label>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form4Example2" class="form-control border
+              border-dark" />
+            <label class="form-label" for="form4Example2">Email address</label>
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control border border-dark" id="form4Example3"
+              rows="4"></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2 " type="checkbox" value=""
+              id="form4Example4" checked />
+            <label class="form-check-label" for="form4Example4">
+              Send me a copy of this message
+            </label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-success btn-block mb-4">Send</button>
+        </form>
+
+        <!-- </div> -->
+      </section>
+
+    </div>
+
+    <section >
+      <div class="box mt-5 ">
+        <h3 class="text-light">subscribe us for latest updates</h3>
+
+            <input type="submit" value="subscribe" class="btn btn-success bg-success">
+      </div>
+    </section>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa fa-shopping-cart" style="font-size:28px;color:rgb(62, 202, 73)">Groco</i>
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-dark">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Our Location
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">U.S.A</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Indian</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">France</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Japan</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-dark">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Quick Links
+          </h6>
+          <p>
+            <a href="#Home" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#Category" class="text-reset">Category</a>
+          </p>
+          <p>
+            <a href="#Product" class="text-reset">Product</a>
+          </p>
+          <p>
+            <a href="#Deal" class="text-reset">Deal</a>
+          </p>
+          <p>
+            <a href="#Contact" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h2 class="text-uppercase fw-bold mb-4 text-dark">Download App</h2>
+          <p class="text-dark">Google Play </p>
+          <p class="text-dark">Window Xp</p>
+          <p class="text-dark">App Store </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </body>
+</html>
